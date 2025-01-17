@@ -10,22 +10,22 @@ const Navbar = () => {
     <nav className="fixed w-full bg-black py-4 px-6 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link to="/" className="text-primary font-bold text-2xl">
-          LOGO
-          <span className="text-white">DESIGN</span>
+          RUNIK
+          <span className="text-white">LOGO</span>
         </Link>
         
         <div className="hidden md:flex gap-8">
           <button onClick={() => scrollToSection('home')} className="nav-link">
-            Home
+            Inicio
           </button>
           <button onClick={() => scrollToSection('team')} className="nav-link">
-            Our Team
+            Nuestro Equipo
           </button>
           <button onClick={() => scrollToSection('about')} className="nav-link">
-            About Us
+            Sobre Nosotros
           </button>
           <button onClick={() => scrollToSection('contact')} className="nav-link">
-            Contact
+            Contactanos
           </button>
         </div>
         

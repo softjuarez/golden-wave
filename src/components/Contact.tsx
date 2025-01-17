@@ -14,8 +14,8 @@ const Contact = () => {
     e.preventDefault();
     // Here you would typically send the data to your backend
     toast({
-      title: "Message Sent!",
-      description: "We'll contact you shortly.",
+      title: "Mensaje enviado!",
+      description: "Te estaremos contactando en breve.",
     });
     setFormData({ name: '', email: '', phone: '', message: '' });
   };
@@ -24,13 +24,13 @@ const Contact = () => {
     <section id="contact" className="py-20 px-4">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Get in <span className="text-primary">Touch</span>
+          Ponte en <span className="text-primary">Contacto</span>
         </h2>
         
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label htmlFor="name" className="block text-sm font-medium mb-2">
-              Name *
+              Nombre *
             </label>
             <input
               type="text"
@@ -44,7 +44,7 @@ const Contact = () => {
           
           <div>
             <label htmlFor="email" className="block text-sm font-medium mb-2">
-              Email *
+              Correo *
             </label>
             <input
               type="email"
@@ -58,7 +58,7 @@ const Contact = () => {
           
           <div>
             <label htmlFor="phone" className="block text-sm font-medium mb-2">
-              Phone (optional)
+              Teléfono (opcional)
             </label>
             <input
               type="tel"
@@ -71,7 +71,7 @@ const Contact = () => {
           
           <div>
             <label htmlFor="message" className="block text-sm font-medium mb-2">
-              Message *
+              Mensaje *
             </label>
             <textarea
               id="message"
@@ -87,7 +87,7 @@ const Contact = () => {
             type="submit"
             className="w-full bg-primary text-black py-3 rounded font-semibold hover:bg-primary/90 transition-colors duration-300"
           >
-            Send Message
+            Enviar Mensaje
           </button>
         </form>
       </div>

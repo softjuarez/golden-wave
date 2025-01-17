@@ -1,22 +1,22 @@
 const services = [
   {
-    title: 'Web Development',
-    description: 'Custom websites and web applications built with the latest technologies.',
+    title: 'Asesoria',
+    description: 'mcaskdl cma; sdmkc aklsmdc ;ams d;cm a;smd c;a.',
     image: '/placeholder.svg'
   },
   {
-    title: 'UI/UX Design',
-    description: 'Beautiful and intuitive interfaces that users love to interact with.',
+    title: 'Auditoria',
+    description: ' sdcn asjndc lan sdclna lsdc nlanlcdna lskdc nlka sldc a.',
     image: '/placeholder.svg'
   },
   {
-    title: 'Digital Marketing',
-    description: 'Strategic marketing campaigns that drive growth and engagement.',
+    title: 'Implementación',
+    description: 'ajksdn ckajnsd ck aklsdcn alsc ndlan lsdcn alksd clka sldckan ls.',
     image: '/placeholder.svg'
   },
   {
-    title: 'Brand Strategy',
-    description: 'Comprehensive brand development and positioning strategies.',
+    title: 'Seguimiento',
+    description: 'jsd canj sdcn alskdj nclaknsdc lkjna lsdcn alkslcdkan s.',
     image: '/placeholder.svg'
   }
 ];
@@ -26,7 +26,7 @@ const About = () => {
     <section id="about" className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Our <span className="text-primary">Services</span>
+          Nuestros <span className="text-primary">Servicios</span>
         </h2>
         
         <div className="grid md:grid-cols-2 gap-8">

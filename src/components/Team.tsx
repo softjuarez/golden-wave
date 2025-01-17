@@ -1,30 +1,30 @@
 const teamMembers = [
   {
     name: 'John Doe',
-    role: 'Creative Director',
+    role: 'Director Creativo',
     image: '/placeholder.svg',
-    description: '10+ years of experience in creative design and brand strategy.',
+    description: '10+ años de experiencia.',
     contact: 'john@example.com'
   },
   {
     name: 'Jane Smith',
-    role: 'Lead Developer',
+    role: 'Lider de Operaciones',
     image: '/placeholder.svg',
-    description: 'Expert in full-stack development and cloud architecture.',
+    description: 'Experto en........',
     contact: 'jane@example.com'
   },
   {
     name: 'Mike Johnson',
-    role: 'Marketing Specialist',
+    role: 'Asesor 1',
     image: '/placeholder.svg',
-    description: 'Digital marketing expert with focus on growth strategies.',
+    description: 'Se involucra en .....',
     contact: 'mike@example.com'
   },
   {
     name: 'Sarah Williams',
-    role: 'UX Designer',
+    role: 'Asesor 2',
     image: '/placeholder.svg',
-    description: 'Passionate about creating intuitive user experiences.',
+    description: 'Soporte en ......',
     contact: 'sarah@example.com'
   }
 ];
@@ -34,7 +34,7 @@ const Team = () => {
     <section id="team" className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Meet Our <span className="text-primary">Team</span>
+          Nuestro <span className="text-primary">Equipo</span>
         </h2>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
