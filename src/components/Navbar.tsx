@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: 'smooth' });
+    setIsMenuOpen(false);
   };
 
   return (
@@ -14,6 +19,7 @@ const Navbar = () => {
           <span className="text-white">LOGO</span>
         </Link>
         
+        {/* Desktop Menu */}
         <div className="hidden md:flex gap-8">
           <button onClick={() => scrollToSection('home')} className="nav-link">
             Inicio
@@ -29,12 +35,51 @@ const Navbar = () => {
           </button>
         </div>
         
-        <button className="md:hidden text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
+        {/* Mobile Menu Button */}
+        <button 
+          onClick={() => setIsMenuOpen(!isMenuOpen)} 
+          className="md:hidden text-white p-2"
+          aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
+        >
+          {isMenuOpen ? (
+            <X className="h-6 w-6" />
+          ) : (
+            <Menu className="h-6 w-6" />
+          )}
         </button>
       </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-sm py-4 px-6">
+          <div className="flex flex-col gap-4">
+            <button 
+              onClick={() => scrollToSection('home')} 
+              className="nav-link text-left py-2"
+            >
+              Inicio
+            </button>
+            <button 
+              onClick={() => scrollToSection('team')} 
+              className="nav-link text-left py-2"
+            >
+              Nuestro Equipo
+            </button>
+            <button 
+              onClick={() => scrollToSection('about')} 
+              className="nav-link text-left py-2"
+            >
+              Sobre Nosotros
+            </button>
+            <button 
+              onClick={() => scrollToSection('contact')} 
+              className="nav-link text-left py-2"
+            >
+              Contactanos
+            </button>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
