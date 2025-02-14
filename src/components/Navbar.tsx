@@ -28,9 +28,6 @@ const Navbar = () => {
           <button onClick={() => scrollToSection('home')} className="nav-link text-black">
             Inicio
           </button>
-          <button onClick={() => scrollToSection('team')} className="nav-link text-black">
-            Nuestro Equipo
-          </button>
           <button onClick={() => scrollToSection('about')} className="nav-link text-black">
             Sobre Nosotros
           </button>
@@ -62,12 +59,6 @@ const Navbar = () => {
               className="nav-link text-black text-left py-2"
             >
               Inicio
-            </button>
-            <button 
-              onClick={() => scrollToSection('team')} 
-              className="nav-link text-black text-left py-2"
-            >
-              Nuestro Equipo
             </button>
             <button 
               onClick={() => scrollToSection('about')} 
