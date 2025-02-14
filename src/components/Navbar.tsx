@@ -19,19 +19,22 @@ const Navbar = () => {
           <img 
             src="/logo.png" 
             alt="Runik Logo" 
-            className="h-8 md:h-10 w-auto"
+            className="h-10 md:h-14 w-auto"
           />
         </Link>
         
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-8">
-          <button onClick={() => scrollToSection('home')} className="nav-link text-black">
+          <button onClick={() => scrollToSection('home')} className="nav-link text-black font-bold text-lg">
             Inicio
           </button>
-          <button onClick={() => scrollToSection('about')} className="nav-link text-black">
+          <button onClick={() => scrollToSection('we')} className="nav-link text-black font-bold text-lg">
             Sobre Nosotros
           </button>
-          <button onClick={() => scrollToSection('contact')} className="nav-link text-black">
+          <button onClick={() => scrollToSection('about')} className="nav-link text-black font-bold text-lg">
+            Nuestros Servicios
+          </button>
+          <button onClick={() => scrollToSection('contact')} className="nav-link text-black font-bold text-lg">
             Contactanos
           </button>
         </div>
