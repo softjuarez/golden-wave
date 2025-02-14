@@ -11,7 +11,7 @@ const Hero = () => {
           Bienvenido a  <span className="text-primary">Runik</span>
         </h1>
         <p className="text-lg md:text-xl mb-8 text-gray-200 animate-fade-in">
-          Somos una agencia de servicios ......
+        Conectando tu presente con el futuro.
         </p>
         <button
           onClick={scrollToContact}
