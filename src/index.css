@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -30,17 +31,21 @@
 
   body {
     font-family: 'Montserrat', sans-serif;
-    @apply bg-gradient-to-br from-gray-900 to-purple-900 min-h-screen text-white;
+    @apply bg-gradient-to-br from-gray-900 to-gray-200 min-h-screen text-white;
   }
 }
 
+#home {
+  @apply bg-gray-800;
+}
+
 .hero-gradient {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(31, 41, 55, 0.7), rgba(31, 41, 55, 0.7)),
               url('/hero-bg.jpg') center/cover no-repeat;
 }
 
 .nav-link {
-  @apply relative text-white hover:text-primary transition-colors duration-300;
+  @apply relative hover:text-primary transition-colors duration-300;
 }
 
 .nav-link::after {

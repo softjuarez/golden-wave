@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full bg-black py-4 px-6 z-50">
+    <nav className="fixed w-full bg-white py-4 px-6 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <img 
@@ -25,16 +25,16 @@ const Navbar = () => {
         
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-8">
-          <button onClick={() => scrollToSection('home')} className="nav-link">
+          <button onClick={() => scrollToSection('home')} className="nav-link text-black">
             Inicio
           </button>
-          <button onClick={() => scrollToSection('team')} className="nav-link">
+          <button onClick={() => scrollToSection('team')} className="nav-link text-black">
             Nuestro Equipo
           </button>
-          <button onClick={() => scrollToSection('about')} className="nav-link">
+          <button onClick={() => scrollToSection('about')} className="nav-link text-black">
             Sobre Nosotros
           </button>
-          <button onClick={() => scrollToSection('contact')} className="nav-link">
+          <button onClick={() => scrollToSection('contact')} className="nav-link text-black">
             Contactanos
           </button>
         </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)} 
-          className="md:hidden text-white p-2"
+          className="md:hidden text-black p-2"
           aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
         >
           {isMenuOpen ? (
@@ -55,29 +55,29 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-sm py-4 px-6">
+        <div className="md:hidden absolute top-full left-0 w-full bg-white py-4 px-6 shadow-lg">
           <div className="flex flex-col gap-4">
             <button 
               onClick={() => scrollToSection('home')} 
-              className="nav-link text-left py-2"
+              className="nav-link text-black text-left py-2"
             >
               Inicio
             </button>
             <button 
               onClick={() => scrollToSection('team')} 
-              className="nav-link text-left py-2"
+              className="nav-link text-black text-left py-2"
             >
               Nuestro Equipo
             </button>
             <button 
               onClick={() => scrollToSection('about')} 
-              className="nav-link text-left py-2"
+              className="nav-link text-black text-left py-2"
             >
               Sobre Nosotros
             </button>
             <button 
               onClick={() => scrollToSection('contact')} 
-              className="nav-link text-left py-2"
+              className="nav-link text-black text-left py-2"
             >
               Contactanos
             </button>
