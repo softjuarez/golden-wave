@@ -31,12 +31,13 @@
 
   body {
     font-family: 'Montserrat', sans-serif;
-    @apply bg-gradient-to-b from-gray-800 to-gray-200 min-h-screen text-white;
+    background: linear-gradient(to bottom, #1E2836, #555C68);
+    @apply min-h-screen text-white;
   }
 }
 
 #home {
-  @apply bg-gray-800;
+  background-color: #1E2836;
 }
 
 .hero-gradient {
