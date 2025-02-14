@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
@@ -14,9 +15,12 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full bg-black py-4 px-6 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link to="/" className="text-primary font-bold text-2xl">
-          RUNIK
-          <span className="text-white">LOGO</span>
+        <Link to="/" className="flex items-center">
+          <img 
+            src="/logo.png" 
+            alt="Runik Logo" 
+            className="h-8 md:h-10 w-auto"
+          />
         </Link>
         
         {/* Desktop Menu */}
