@@ -17,24 +17,21 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <img 
-            src="/logo.png" 
-            alt="Runik Logo" 
-            className="h-10 md:h-14 w-auto"
+            src="/lovable-uploads/cd4f34ae-a5ad-4ed1-a770-2ad9a46e002a.png"
+            alt="Mediascope Digital Logo" 
+            className="h-12 w-auto"
           />
         </Link>
         
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-8">
-          <button onClick={() => scrollToSection('home')} className="nav-link text-black font-bold text-lg">
+          <button onClick={() => scrollToSection('home')} className="nav-link text-primary font-bold">
             Inicio
           </button>
-          <button onClick={() => scrollToSection('we')} className="nav-link text-black font-bold text-lg">
+          <button onClick={() => scrollToSection('about')} className="nav-link text-primary font-bold">
             Sobre Nosotros
           </button>
-          <button onClick={() => scrollToSection('about')} className="nav-link text-black font-bold text-lg">
-            Nuestros Servicios
-          </button>
-          <button onClick={() => scrollToSection('contact')} className="nav-link text-black font-bold text-lg">
+          <button onClick={() => scrollToSection('contact')} className="nav-link text-primary font-bold">
             Contactanos
           </button>
         </div>
@@ -42,7 +39,7 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)} 
-          className="md:hidden text-black p-2"
+          className="md:hidden text-primary p-2"
           aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
         >
           {isMenuOpen ? (
@@ -59,19 +56,19 @@ const Navbar = () => {
           <div className="flex flex-col gap-4">
             <button 
               onClick={() => scrollToSection('home')} 
-              className="nav-link text-black text-left py-2"
+              className="nav-link text-primary text-left py-2"
             >
               Inicio
             </button>
             <button 
               onClick={() => scrollToSection('about')} 
-              className="nav-link text-black text-left py-2"
+              className="nav-link text-primary text-left py-2"
             >
               Sobre Nosotros
             </button>
             <button 
               onClick={() => scrollToSection('contact')} 
-              className="nav-link text-black text-left py-2"
+              className="nav-link text-primary text-left py-2"
             >
               Contactanos
             </button>
